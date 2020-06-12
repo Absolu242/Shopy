@@ -6,7 +6,7 @@ function Header() {
     return (
         <div>
             <ContactHeader/>
-            <hr/>
+
             <NavHeader/>
         </div>
     )
