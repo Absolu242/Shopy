@@ -7,7 +7,7 @@ const productSchema = mongoose.Schema (
       type: Schema.Types.ObjectId,
       ref: 'User'
     },
-    image: {
+    images: {
       type: Array,
       default: []
     },
@@ -40,6 +40,11 @@ const productSchema = mongoose.Schema (
       default: []
     },
 
+    type:{
+      type:String,
+      default: []
+    }
+
     brand: {
       type: Array,
       default: []
@@ -54,6 +59,7 @@ const productSchema = mongoose.Schema (
       type: Boolean,
       default: false
     },
+    featured: false
   },
   {timestamp: true}
 );

@@ -48,3 +48,4 @@ router.post ('/uploadProduct', auth, (req, res) => {
   });
 });
 
+module.exports = router;

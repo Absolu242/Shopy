@@ -1,0 +1,6 @@
+fonrt: HarmoniaSansProCyr SemiBold, Regular, Italic, bold ,black, Light;
+	TitilliumText22L XBold;
+color:
+orange:#ff5912
+blue:#34404b
+grey:#495662
