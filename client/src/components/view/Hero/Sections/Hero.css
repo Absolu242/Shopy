@@ -1,0 +1,36 @@
+.Dots {
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 600px;
+  left: 10%;
+  z-index: 9999999;
+}
+
+.Dots input[type="button" i],
+.Dots input[type="submit" i],
+.Dots input[type="reset" i],
+.Dots input[type="file" i]::-webkit-file-upload-button,
+.Dots button {
+  padding: 6px 12px !important;
+  background-color: #fff;
+  border: none;
+  margin: 0 3px;
+  outline: none;
+}
+
+.Dots input[type="button" i]:disabled,
+.Dots input[type="submit" i]:disabled,
+.Dots input[type="reset" i]:disabled,
+.Dots input[type="file" i]:disabled::-webkit-file-upload-button,
+.Dots button:disabled,
+.Dots select:disabled,
+.Dots optgroup:disabled,
+.Dots option:disabled,
+.Dots select[disabled] > option {
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
+  background-color: #ff5912 !important;
+  padding: 6px 25px !important;
+}
+/*# sourceMappingURL=Hero.css.map */
