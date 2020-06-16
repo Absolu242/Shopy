@@ -6,7 +6,7 @@ import ProductCollection
 import SingleProductPage
   from './components/view/SingleProductPage/SingleProductPage';
 import Header from './components/view/Header/Header';
-
+import HotDeals from '../src/components/view/HotDeals/HotDeals'
 import Footer from './components/view/Footer/Footer';
 
 function App () {
@@ -18,8 +18,13 @@ function App () {
           <Route exact path="/" component={LandingPage} />
           <Route
             exact
-            path="/productsCollection"
+            path="/productCollection"
             component={ProductCollection}
+          />
+          <Route
+            exact
+            path="/HotDeals"
+            component={HotDeals}
           />
           <Route
             exact

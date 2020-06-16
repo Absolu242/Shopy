@@ -18,7 +18,7 @@ function Hero () {
       naturalSlideWidth={100}
       naturalSlideHeight={50}
       totalSlides={4}
-      isPlaying={true}
+      isPlaying={false}
       interval={5000}
       infinite={true}
       orientation='vertical'

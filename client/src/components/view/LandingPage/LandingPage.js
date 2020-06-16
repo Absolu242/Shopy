@@ -8,7 +8,7 @@ import NewsLetter from '../NewsLetter/NewsLetter';
 
 function LandingPage() {
     return (
-        <div>
+        <div >
             <Hero/>
             <NewArrivals/>
             <Ads/>

@@ -1,5 +1,13 @@
 
 import hero from '.././assets/hero.png'
+import Img1 from '.././assets/ProductImg1.png'
+import Img2 from '.././assets/ProductImg2.png'
+import Img3 from '.././assets/ProductImg3.png'
+import Img4 from '.././assets/ProductImg4.png'
+import Img5 from '.././assets/ProductImg5.png'
+import Img6 from '.././assets/ProductImg6.png'
+import Img7 from '.././assets/ProductImg7.png'
+import Img8 from '.././assets/ProductImg8.png'
 
 const store = {
   items:[
@@ -7,8 +15,8 @@ const store = {
       id: 1,
       title: 'Brown Brim',
       imageUrl: {
-        img1:'https://i.ibb.co/ZYW3VTp/brown-brim.png',
-        img2:'https://i.ibb.co/ypkgK0X/blue-beanie.png',
+        img1:Img1,
+        img2:Img2,
         img3:'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
       },
 
@@ -19,12 +27,12 @@ const store = {
       size: ['S', 'M', 'L', 'XL'],
       quantity: 1,
       brand: 'Reebook',
-      color: {
-        red: 'red',
-        blue: 'blue',
-        black: 'black',
-        green: 'green',
-      },
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
       like: false,
       featured: true,
       hot: false,
@@ -34,8 +42,8 @@ const store = {
       id: 2,
       title: 'Grey Brim',
       imageUrl: {
-        img1:'https://i.ibb.co/RjBLWxB/grey-brim.png',
-        img2:'https://i.ibb.co/YTjW3vF/green-beanie.png',
+        img1:'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
+        img2:Img1,
         img3:'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
       },
       description: 'Lorem Ipsum is simply dummy text of the printing and type setting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry',
@@ -45,12 +53,12 @@ const store = {
       size: ['S', 'M', 'L', 'XL'],
       quantity: 1,
       brand: 'Reebook',
-      color: {
-        red: 'red',
-        blue: 'blue',
-        black: 'black',
-        green: 'green',
-      },
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
       like: false,
       featured: false,
       hot: true,
@@ -61,8 +69,8 @@ const store = {
       id: 3,
       title: 'Red Beanie',
       imageUrl: {
-        img1:'https://i.ibb.co/bLB646Z/red-beanie.png',
-        img2:'https://i.ibb.co/1f2nWMM/wolf-cap.png',
+        img1:Img3,
+        img2:Img2,
         img3:'https://i.ibb.co/X2VJP2W/blue-snapback.png',
       },
       description: 'Lorem Ipsum is simply dummy text of the printing and type setting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry',
@@ -72,12 +80,12 @@ const store = {
       size: ['S', 'M', 'L', 'XL'],
       quantity: 1,
       brand: 'Reebook',
-      color: {
-        red: 'red',
-        blue: 'blue',
-        black: 'black',
-        green: 'green',
-      },
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
       like: false,
       featured: false,
       hot: false,
@@ -88,8 +96,8 @@ const store = {
       id: 4,
       title: 'Adidas NMD',
       imageUrl: {
-        img1:'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
-        img2:'https://i.ibb.co/dJbG1cT/yeezy.png',
+        img1:'https://i.ibb.co/bPmVXyP/black-converse.png',
+        img2:Img3,
         img3:'https://i.ibb.co/bPmVXyP/black-converse.png',
       },
       description: 'Lorem Ipsum is simply dummy text of the printing and type setting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry',
@@ -99,12 +107,12 @@ const store = {
       size: ['S', 'M', 'L', 'XL'],
       quantity: 1,
       brand: 'Adidas',
-      color: {
-        red: 'red',
-        blue: 'blue',
-        black: 'black',
-        green: 'green',
-      },
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
       like: false,
       featured: true,
       hot: false,
@@ -126,12 +134,12 @@ const store = {
       size: ['S', 'M', 'L', 'XL'],
       quantity: 1,
       brand: 'Nike',
-      color: {
-        red: 'red',
-        blue: 'blue',
-        black: 'black',
-        green: 'green',
-      },
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
       like: false,
       featured: false,
       hot: false,
@@ -151,12 +159,12 @@ const store = {
       size: ['S', 'M', 'L', 'XL'],
       quantity: 1,
       brand: 'Nike',
-      color: {
-        red: 'red',
-        blue: 'blue',
-        black: 'black',
-        green: 'green',
-      },
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
       like: false,
       featured: false,
       hot: false,
@@ -177,12 +185,12 @@ const store = {
       size: ['S', 'M', 'L', 'XL'],
       quantity: 1,
       brand: 'Adidas',
-      color: {
-        red: 'red',
-        blue: 'blue',
-        black: 'black',
-        green: 'green',
-      },
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
       like: false,
       featured: true,
       hot: false,
@@ -203,12 +211,12 @@ const store = {
       size: ['S', 'M', 'L', 'XL'],
       quantity: 1,
       brand: 'Reebook',
-      color: {
-        red: 'red',
-        blue: 'blue',
-        black: 'black',
-        green: 'green',
-      },
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
       like: false,
       featured: false,
       hot: true,
@@ -229,12 +237,12 @@ const store = {
       size: ['S', 'M', 'L', 'XL'],
       quantity: 1,
       brand: 'Adidas',
-      color: {
-        red: 'red',
-        blue: 'blue',
-        black: 'black',
-        green: 'green',
-      },
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
       like: false,
       featured: false,
       hot: false,
@@ -255,12 +263,12 @@ const store = {
       size: ['S', 'M', 'L', 'XL'],
       quantity: 1,
       brand: 'Reebook',
-      color: {
-        red: 'red',
-        blue: 'blue',
-        black: 'black',
-        green: 'green',
-      },
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
       like: false,
       featured: true,
       hot: false,
@@ -270,7 +278,7 @@ const store = {
     id: 11,
       title: 'Yellow Track Suit',
       imageUrl: {
-        img1:'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
+        img1:'https://i.ibb.co/KV18Ysr/floral-skirt.png',
         img2:'https://i.ibb.co/qBcrsJg/white-vest.png',
       },
       description: 'Lorem Ipsum is simply dummy text of the printing and type setting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry',
@@ -280,12 +288,12 @@ const store = {
       size: ['S', 'M', 'L', 'XL'],
       quantity: 1,
       brand: 'Reebook',
-      color: {
-        red: 'red',
-        blue: 'blue',
-        black: 'black',
-        green: 'green',
-      },
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
       like: false,
       featured: false,
       hot: false,
@@ -294,7 +302,7 @@ const store = {
     {
     id: 12,
       title: 'Camo Down Vest',
-      imageUrl: 'http://i.ibb.co/xJS0T3Y/camo-vest.png',
+      imageUrl: {img1:'http://i.ibb.co/xJS0T3Y/camo-vest.png'},
       description: 'Lorem Ipsum is simply dummy text of the printing and type setting industry Lorem Ipsum is simply dummy text of the printing and typesting industry',
       price: 325,
       gender: 'Men',
@@ -302,12 +310,12 @@ const store = {
       size: ['S', 'M', 'L', 'XL'],
       quantity: 1,
       brand: 'Reebook',
-      color: {
-        red: 'red',
-        blue: 'blue',
-        black: 'black',
-        green: 'green',
-      },
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
       like: false,
       featured: false,
       hot: true,
@@ -329,12 +337,12 @@ const store = {
       size: ['S', 'M', 'L', 'XL'],
       quantity: 1,
       brand: 'Reebook',
-      color: {
-        red: 'red',
-        blue: 'blue',
-        black: 'black',
-        green: 'green',
-      },
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
       like: false,
       featured: false,
       hot: false,
@@ -355,16 +363,124 @@ const store = {
       size: ['S', 'M', 'L', 'XL'],
       quantity: 1,
       brand: 'Reebook',
-      color: {
-        red: 'red',
-        blue: 'blue',
-        black: 'black',
-        green: 'green',
-      },
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
       like: false,
       featured: false,
       hot: false,
     },
+
+    {
+      id: 19,
+      title: 'Brown Brim',
+      imageUrl: {
+        img3:Img1,
+        img2:Img2,
+        img1:'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
+      },
+
+      description: 'Lorem Ipsum is simply dummy text of the printing and type setting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+      price: 22,
+      type: 'Hats',
+      gender: 'Men',
+      size: ['S', 'M', 'L', 'XL'],
+      quantity: 1,
+      brand: 'Reebook',
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
+      like: false,
+      featured: true,
+      hot: false,
+    },
+    
+      {
+      id: 20,
+      title: 'Grey Brim',
+      imageUrl: {
+        img3:'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
+        img2:Img1,
+        img1:'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
+      },
+      description: 'Lorem Ipsum is simply dummy text of the printing and type setting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+      price: 25,
+      type: 'Hats',
+      gender: 'Men',
+      size: ['S', 'M', 'L', 'XL'],
+      quantity: 1,
+      brand: 'Reebook',
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
+      like: false,
+      featured: false,
+      hot: true,
+    },
+  
+
+    {
+      id: 21,
+      title: 'Red Beanie',
+      imageUrl: {
+        img3:Img3,
+        img2:Img2,
+        img1:'https://i.ibb.co/X2VJP2W/blue-snapback.png',
+      },
+      description: 'Lorem Ipsum is simply dummy text of the printing and type setting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+      price: 18,
+      type: 'Hats',
+      gender: 'Men',
+      size: ['S', 'M', 'L', 'XL'],
+      quantity: 1,
+      brand: 'Reebook',
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
+      like: false,
+      featured: false,
+      hot: false,
+    },
+  
+
+    {
+      id: 22,
+      title: 'Adidas NMD',
+      imageUrl: {
+        img3:'https://i.ibb.co/bPmVXyP/black-converse.png',
+        img2:Img3,
+        img1:'https://i.ibb.co/bPmVXyP/black-converse.png',
+      },
+      description: 'Lorem Ipsum is simply dummy text of the printing and type setting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+      price: 220,
+      type: 'Sneakers',
+      gender: 'Men',
+      size: ['S', 'M', 'L', 'XL'],
+      quantity: 1,
+      brand: 'Adidas',
+      color: [
+         'red',
+         'blue',
+         'black',
+         'green'
+      ],
+      like: false,
+      featured: true,
+      hot: false,
+    },
+
 
   ],
 

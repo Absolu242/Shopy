@@ -108,8 +108,8 @@ function NavHeader () {
                 Home
               </NavLink>
             </li>
-            <li><NavLink  activeClassName='selected' to="productCollectionPage">Products</NavLink></li>
-            <li><NavLink to="#">Hot Deals</NavLink></li>
+            <li><NavLink  activeClassName='selected' to="/productCollection">Products</NavLink></li>
+            <li><NavLink activeClassName='selected' to="/HotDeals">Hot Deals</NavLink></li>
             <li><NavLink to="#">About</NavLink></li>
             <li><NavLink to="#">Contact</NavLink></li>
           </ul>

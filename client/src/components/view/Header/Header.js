@@ -4,7 +4,7 @@ import NavHeader from './Sections/NavHeader';
 
 function Header() {
     return (
-        <div>
+        <div style={{backgroundColor:'#ffff'}}>
             <ContactHeader/>
             <NavHeader/>
         </div>

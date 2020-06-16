@@ -1,9 +1,10 @@
 import React from 'react'
+import Products from '../Products/Products'
 
 function ProductCollection() {
     return (
         <div>
-            this is product collection
+            <Products/>
         </div>
     )
 }
