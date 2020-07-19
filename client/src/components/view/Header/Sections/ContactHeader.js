@@ -15,48 +15,15 @@ import {
   } from 'react-icons/bs';
   import styled from 'styled-components'
 
-
-  const Contact = styled.div`
-    display:flex;
-    justify-content:space-between;
-    padding:2rem 5rem
-  `
-
-  const Left = styled.div`
-  display:flex;
-  color:#ff5912;
-
-  div{
-      position: relative;
-      display: flex;
-      margin:0 1rem ;
-      align-items:center;
-
-      p{
-        color:#34404b !important;
-        margin:0 0.2rem;
-      }
-  }
-  `
-
-  const Right = styled.div`
-  display:flex;
-  align-items:center;
-  color:#34404b;
-
-  a{
-      padding:0 1rem;
-      text-decoration:none;
-      color:#34404b
-  }
-
-  `
+import {device} from '../../../utils/device';
+import './Contact.css'
+ 
 
 
 function ContactHeader () {
   return (
-    <Contact>
-      <Left>
+    <div className='contact'>
+      <div className='left'>
         <div>
             <BsEnvelope/> 
             <p>info@shopy.com</p>
@@ -65,17 +32,17 @@ function ContactHeader () {
             <FaBlenderPhone />
             <p>453-5553-996</p>
         </div>
-      </Left>
+      </div>
 
-      <Right>
+      <div className='right'>
         <span >
-          <a href="#"> <FaFacebookF /></a>
-          <a href="#"><FaTwitter /></a>
-          <a href="#"><TiSocialGooglePlus /></a>
-          <a href="#"><TiSocialInstagram /></a>
+          <a href="/"> <FaFacebookF /></a>
+          <a href="/"><FaTwitter /></a>
+          <a href="/"><TiSocialGooglePlus /></a>
+          <a href="/"><TiSocialInstagram /></a>
         </span>
-      </Right>
-    </Contact>
+      </div>
+    </div>
   );
 }
 

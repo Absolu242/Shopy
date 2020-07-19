@@ -1,0 +1,57 @@
+.New {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.Display {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .Display {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+}
+
+.Title {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.Title p {
+  color: #495662;
+}
+
+.Title .orange {
+  color: #ff5912;
+}
+
+.Title .blue {
+  color: #34404b;
+}
+/*# sourceMappingURL=NewArrivals.css.map */

@@ -1,0 +1,209 @@
+$whiteColor:#34404b;
+$orangeColor:#ff5912;
+$greyColor:#495662;
+$greyColor3:#6a6a6a;
+$greyColor4:#909090;
+
+html{
+    a, button{
+        cursor: pointer;
+    }
+
+}
+
+
+a{
+  padding:0 1rem;
+  text-decoration:none;
+  color:#34404b
+  }
+
+  a:hover{
+      color:#ff5912 !important;
+    }
+
+
+.basket{
+    position: relative;
+    background-color:none;  
+}
+.basket__card{
+    position: relative;
+    background-color: #fff;
+    left:22%;
+    transform: translate(-15%,0%);
+    width:70%;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid  $greyColor;
+    
+
+    .text{
+        padding:1rem;
+        text-align: center;
+        font-size:1.5rem;
+        font-weight:500;
+        color: $whiteColor;
+
+        span{
+            color:$orangeColor
+        }
+    }
+
+    button{
+            padding: .5rem;
+            outline: none;
+            background: none;
+            border:none;
+
+            
+            .icon{
+                font-size: 1.5rem;
+                color: $whiteColor;
+                font-weight: bold;
+               }
+            }
+    
+
+    &--content{
+        position: relative;
+        overflow: scroll;
+
+        &::-webkit-scrollbar{
+            width:2px;
+        }
+        
+        &::-webkit-scrollbar-thumb{
+            background:  $orangeColor;
+        }
+
+      
+        &__item{
+            position: relative;
+            width:inherit;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border-bottom:none;
+            margin: 1rem 0;
+
+            .image{
+                padding-right: 1rem;
+                img{
+                    width:100px;
+                    height:100px;
+                }
+            }
+           
+           .info{
+            padding-right: .7rem;
+            text-align: left;
+
+               h3{
+                   font-size: 1.2rem;
+                   color: $whiteColor;
+               }
+
+               .price{
+                   position: relative;
+                   color: $orangeColor;
+                   font-family: 'Crimson Text', serif;
+                   font-style: italic;
+                   font-size: 1.2rem;
+                   top: -0.4rem;
+               }
+
+               .quantity{
+
+                position: relative;
+                font-size: 1rem;
+                top: -0.7rem;
+                color: $greyColor3;
+
+               }
+
+               @media(max-width:768px){
+                   h3{
+                       font-size:1rem;
+                       line-height: 1rem;
+                   }
+                   .price{
+                    top: -0.5rem;
+                }
+ 
+                .quantity{
+                 top: -1rem;
+                }
+
+               }
+           } 
+
+
+           button{
+
+            border: none;
+           
+            color: $whiteColor;
+            .icon{
+
+                font-size: 1.8rem;
+                color: $whiteColor;
+                font-weight: bold;
+               }
+
+           }
+           
+        }
+
+        
+    }
+
+    &__action{
+        text-align: center;
+
+        h2 {
+            font-weight: 200;
+            font-size: .9rem;
+            letter-spacing: .5rem;
+            color:$whiteColor;
+            span{
+             color: $orangeColor;
+               font-family: 'Crimson Text', serif;
+               font-style: italic;
+               font-size: 1.5rem;
+            }
+        }
+
+        .btn{
+
+            margin-bottom: .5rem ;
+
+            button{
+
+                font-size: 1rem;
+                font-weight: bold;
+                letter-spacing: .2rem;
+                color: white;
+                border: none;
+                
+
+                &.btn-primary{
+                
+                background-color: $orangeColor;
+                padding: .7rem 2rem; 
+
+                }
+
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 735px){
+
+    .card{
+        position: absolute;
+    }
+
+}

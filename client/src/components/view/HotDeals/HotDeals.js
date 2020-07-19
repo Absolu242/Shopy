@@ -5,13 +5,14 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 
+width:100%;
 height:inherit;
 position:relative;
 text-align:center;
+padding: 50px 0;
 display:flex;
-justify-content:space-between;
+justify-content:center;
 flex-wrap:wrap;
-padding: 20px 200px;
 
 `;
 

@@ -1,0 +1,119 @@
+
+.NavBar {
+display:flex;
+justify-content:space-between;
+padding:2rem 5rem;
+border-top: 1px #edeff1 solid;
+border-bottom: 1px #edeff1 solid;
+
+.selected{
+    color:#ff5912
+}
+}
+
+.Navleft{
+display:flex;
+position:relative;
+color:#ff5912;
+left:1rem;
+
+
+.NavList{
+  position: relative;
+  display: flex;
+  margin-right:2rem ;
+  align-items:center;
+
+  ul{
+    display:flex;
+    list-style:none
+}
+
+li{
+  color:#34404b !important;
+  margin:0 0.2rem;
+
+
+  a{
+      padding:0 1rem;
+      text-decoration:none;
+      color:#34404b
+  }
+}
+
+a:hover{
+    color:#ff5912 !important;
+  }
+}
+}
+
+
+
+.Navright{
+display:flex;
+align-items:center;
+color:#34404b;
+
+.counter{
+  position: relative;
+  left:15px;
+  top:-16px;
+  background-color:#34404b;
+  color:#fff;
+  padding:0 5px;
+  border-radius:50%;
+  font-size:12px;
+
+}
+
+a{
+padding-left:1rem;
+text-decoration:none;
+color:#34404b
+}
+
+a:hover{
+    color:#ff5912 !important;
+  }
+
+}
+
+
+@media (max-width:768px){
+    
+    
+    .NavBar {
+        justify-content:center;
+            flex-direction:column;
+            text-align:center;
+            align-items: center;
+        
+        }
+    
+        .Navleft{
+            justify-content:center;
+            flex-direction:column;
+            text-align:center;
+            align-items: center;
+            left: 0;
+    
+            .NavList{
+                
+                ul{
+                    justify-content:center;
+                    flex-direction:column;
+                    text-align:center;
+                    align-items: center;
+                }
+    
+                li{
+                    margin:15px 0;
+    
+                    a{
+                        padding: 1rem 0;
+                    }
+                }
+            }
+        }
+        
+    }

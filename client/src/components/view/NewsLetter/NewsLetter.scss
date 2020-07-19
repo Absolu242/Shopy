@@ -1,0 +1,125 @@
+
+.News{
+align-items:center;
+height:60px;
+padding: 20px 190px;
+
+.content{
+position:relative;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background-color:#fff;
+
+}
+
+.message{
+    position:relative;
+    display:flex;
+    align-items:center;
+   
+    h3{
+        padding: 5px 20px;
+        color:#ff5912;
+    }
+    p{
+        color:#34404b;
+        font-weight:lighter;
+    }
+}
+
+ form {
+    position:relative;
+    display:flex;
+    align-items:center;
+
+    .formIcon {
+        position: relative;
+        padding-right: 1rem;
+
+        input {
+            width: 200px;
+            margin: 2px 0;
+            outline: none;
+            padding: 8px;
+            transition: 0.3s;
+            padding: 1.4rem 0;
+            padding-left: 3.3rem;
+            color: #a0a0a0;
+            border:none;
+        }
+        input:focus {
+            box-shadow: 0 0 8px 0 ff5912;
+        }
+
+        ion-icon {
+            position: absolute;
+            left: 0;
+            top: 15px;
+            padding: 9px 8px;
+            color:#ff5912;
+            font-size: 1.3rem;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+          }
+
+       
+  }
+  button{
+    padding: 1.2rem 1.2rem;
+    background-color:#ff5912;
+    color: #fff;
+    border:none;
+    font-weight: bold;
+    outline: none;
+    margin:0 20px;
+}
+}
+
+}
+
+@media (max-width:768px){
+    
+.News{
+    align-items:center;
+    height:200px;
+    padding:0;
+    
+    .content{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items:center;
+    align-content:center;
+    
+    }
+    
+    .message{
+        position:relative;
+        display:flex;
+        align-items:center;
+       
+        h3{
+            padding: 5px 10px;
+            color:#ff5912;
+        }
+
+    }
+    
+    
+    form {
+
+        button{
+            padding: 1.2rem 1.2rem;
+            background-color:#ff5912;
+            color: #fff;
+            border:none;
+            font-weight: bold;
+            outline: none;
+            margin:0;
+        }
+    }
+    
+    }
+}

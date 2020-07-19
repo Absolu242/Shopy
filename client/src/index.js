@@ -6,20 +6,16 @@ import {BrowserRouter} from 'react-router-dom';
 
 //redux
 import {Provider} from 'react-redux';
-import {createStore, applyMiddleware} from 'redux';
-import promiseMiddleware from 'redux-promise';
-import ReduxThunk from 'redux-thunk';
+import store from './store';
 
-const createStoreWithMiddleware = applyMiddleware (
-  promiseMiddleware,
-  ReduxThunk
-) (createStore);
+
 
 ReactDOM.render (
-  
+  <Provider store={store}>
    <BrowserRouter>
    <App />
- </BrowserRouter>,
+ </BrowserRouter>
+ </Provider>,
   document.getElementById ('root')
 );
 

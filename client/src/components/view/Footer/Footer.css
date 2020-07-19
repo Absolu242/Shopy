@@ -1,0 +1,100 @@
+.Foot {
+  position: relative;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.Foot p, .Foot li {
+  color: #34404b;
+}
+
+.Foot li {
+  padding: 5px 0;
+  font-weight: 500;
+}
+
+.Foot .lists {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: -15px;
+}
+
+.Foot .lists .list {
+  padding: 0 50px;
+}
+
+.Foot h3 {
+  color: #495662;
+}
+
+.Foot a {
+  text-decoration: none;
+  color: #495662;
+}
+
+.Foot a:hover {
+  color: #ff5912;
+}
+
+.Foot .payement {
+  position: relative;
+  top: -35px;
+}
+
+.Foot .payement p {
+  color: #ff5912;
+}
+
+@media (max-width: 768px) {
+  .Foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .Foot .logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .Foot .lists {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Foot .payement {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+/*# sourceMappingURL=Footer.css.map */

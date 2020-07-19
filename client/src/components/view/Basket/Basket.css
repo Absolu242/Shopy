@@ -1,0 +1,188 @@
+html a, html button {
+  cursor: pointer;
+}
+
+a {
+  padding: 0 1rem;
+  text-decoration: none;
+  color: #34404b;
+}
+
+a:hover {
+  color: #ff5912 !important;
+}
+
+.basket {
+  position: relative;
+  background-color: none;
+}
+
+.basket__card {
+  position: relative;
+  background-color: #fff;
+  left: 22%;
+  -webkit-transform: translate(-15%, 0%);
+          transform: translate(-15%, 0%);
+  width: 70%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  border: 1px solid #495662;
+}
+
+.basket__card .text {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #34404b;
+}
+
+.basket__card .text span {
+  color: #ff5912;
+}
+
+.basket__card button {
+  padding: .5rem;
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.basket__card button .icon {
+  font-size: 1.5rem;
+  color: #34404b;
+  font-weight: bold;
+}
+
+.basket__card--content {
+  position: relative;
+  overflow: scroll;
+}
+
+.basket__card--content::-webkit-scrollbar {
+  width: 2px;
+}
+
+.basket__card--content::-webkit-scrollbar-thumb {
+  background: #ff5912;
+}
+
+.basket__card--content__item {
+  position: relative;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-bottom: none;
+  margin: 1rem 0;
+}
+
+.basket__card--content__item .image {
+  padding-right: 1rem;
+}
+
+.basket__card--content__item .image img {
+  width: 100px;
+  height: 100px;
+}
+
+.basket__card--content__item .info {
+  padding-right: .7rem;
+  text-align: left;
+}
+
+.basket__card--content__item .info h3 {
+  font-size: 1.2rem;
+  color: #34404b;
+}
+
+.basket__card--content__item .info .price {
+  position: relative;
+  color: #ff5912;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  top: -0.4rem;
+}
+
+.basket__card--content__item .info .quantity {
+  position: relative;
+  font-size: 1rem;
+  top: -0.7rem;
+  color: #6a6a6a;
+}
+
+@media (max-width: 768px) {
+  .basket__card--content__item .info h3 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .basket__card--content__item .info .price {
+    top: -0.5rem;
+  }
+  .basket__card--content__item .info .quantity {
+    top: -1rem;
+  }
+}
+
+.basket__card--content__item button {
+  border: none;
+  color: #34404b;
+}
+
+.basket__card--content__item button .icon {
+  font-size: 1.8rem;
+  color: #34404b;
+  font-weight: bold;
+}
+
+.basket__card__action {
+  text-align: center;
+}
+
+.basket__card__action h2 {
+  font-weight: 200;
+  font-size: .9rem;
+  letter-spacing: .5rem;
+  color: #34404b;
+}
+
+.basket__card__action h2 span {
+  color: #ff5912;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.basket__card__action .btn {
+  margin-bottom: .5rem;
+}
+
+.basket__card__action .btn button {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  color: white;
+  border: none;
+}
+
+.basket__card__action .btn button.btn-primary {
+  background-color: #ff5912;
+  padding: .7rem 2rem;
+}
+
+@media (max-width: 735px) {
+  .card {
+    position: absolute;
+  }
+}
+/*# sourceMappingURL=Basket.css.map */

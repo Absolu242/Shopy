@@ -1,0 +1,144 @@
+.News {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  padding: 20px 190px;
+}
+
+.News .content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
+.News .message {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.News .message h3 {
+  padding: 5px 20px;
+  color: #ff5912;
+}
+
+.News .message p {
+  color: #34404b;
+  font-weight: lighter;
+}
+
+.News form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.News form .formIcon {
+  position: relative;
+  padding-right: 1rem;
+}
+
+.News form .formIcon input {
+  width: 200px;
+  margin: 2px 0;
+  outline: none;
+  padding: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 1.4rem 0;
+  padding-left: 3.3rem;
+  color: #a0a0a0;
+  border: none;
+}
+
+.News form .formIcon input:focus {
+  -webkit-box-shadow: 0 0 8px 0 ff5912;
+          box-shadow: 0 0 8px 0 ff5912;
+}
+
+.News form .formIcon ion-icon {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  padding: 9px 8px;
+  color: #ff5912;
+  font-size: 1.3rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.News form button {
+  padding: 1.2rem 1.2rem;
+  background-color: #ff5912;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  outline: none;
+  margin: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .News {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 200px;
+    padding: 0;
+  }
+  .News .content {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .News .message {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .News .message h3 {
+    padding: 5px 10px;
+    color: #ff5912;
+  }
+  .News form button {
+    padding: 1.2rem 1.2rem;
+    background-color: #ff5912;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    outline: none;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=NewsLetter.css.map */

@@ -1,0 +1,171 @@
+ {
+  "products":[
+      {
+      "id": 1,
+      "title": "Brown Brim",
+      "imageUrl": [
+        "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
+        "https://i.ibb.co/rKBDvJX/palm-tree-cap.png"
+      ],
+
+      "description": "Lorem Ipsum is simply dummy text of the printing and type setting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "price": 22,
+      "type": "Hats",
+      "gender": "Men",
+      "size": ["S", "M", "L", "XL"],
+      "quantity": 1,
+      "brand": "Reebook",
+      "color": [
+         "red",
+         "blue",
+         "black",
+         "green"
+      ],
+      "like": false,
+      "featured": true,
+      "hot": false,
+      "addCart":false
+    },
+    
+    {
+      "id": 2,
+      "title": "Brown Brim",
+      "imageUrl": [
+        "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
+        "https://i.ibb.co/rKBDvJX/palm-tree-cap.png"
+        ],
+
+      "description": "Lorem Ipsum is simply dummy text of the printing and type setting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "price": 22,
+      "type": "Hats",
+      "gender": "Men",
+      "size": ["S", "M", "L", "XL"],
+      "quantity": 1,
+      "brand": "Reebook",
+      "color": [
+         "red",
+         "blue",
+         "black",
+         "green"
+      ],
+      "like": true,
+      "featured": true,
+      "hot": true,
+      "addCart":false
+    },
+  
+    
+    {
+      "id": 3,
+      "title": "Brown Brim",
+      "imageUrl": [
+        "https://i.ibb.co/X2VJP2W/blue-snapback.png"
+      ],
+
+      "description": "Lorem Ipsum is simply dummy text of the printing and type setting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "price": 22,
+      "type": "Hats",
+      "gender": "Men",
+      "size": ["S", "M", "L", "XL"],
+      "quantity": 1,
+      "brand": "Reebook",
+      "color": [
+         "red",
+         "blue",
+         "black",
+         "green"
+      ],
+      "like": false,
+      "featured": false,
+      "hot": false,
+      "addCart":false
+    },
+  
+    {
+      "id": 4,
+      "title": "Brown Brim",
+      "imageUrl": [
+        "https://i.ibb.co/bPmVXyP/black-converse.png",
+        "https://i.ibb.co/QdJwgmp/brown-cowboy.png"
+      ],
+
+      "description": "Lorem Ipsum is simply dummy text of the printing and type setting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "price": 22,
+      "type": "Hats",
+      "gender": "Men",
+      "size": ["S", "M", "L", "XL"],
+      "quantity": 1,
+      "brand": "Reebook",
+      "color": [
+         "red",
+         "blue",
+         "black",
+         "green"
+      ],
+      "like": false,
+      "featured": true,
+      "hot": true,
+      "addCart":false
+    },
+  
+    {
+      "id": 15,
+      "title": "FULL WINTER KIT",
+      "HeroImage": "https://i.ibb.co/55z32tw/long-sleeimg1:ve.png",
+      "imageUrl":{
+        "img1":"https://i.ibb.co/55z32tw/long-sleeimg1:ve.png",
+        "img2":"https://i.ibb.co/VpW4x5t/roll-up-jimg2:ean-shirt.png"
+      },
+      "kitItems":"Half Jacket + Skiny Trousers + Boot leather",
+      "description": "Lorem Ipsum is simply dummy text of the printing and type setting industry ",
+      "price": 120,
+      "gender": "Women",
+      "type": "kit",
+      "size": ["S", "M", "L", "XL"],
+      "quantity": 1,
+      "color": [
+        "red",
+        "blue",
+        "black",
+        "green"
+     ],
+      "brand": "Reebook",
+      "like": false,
+      "featured": false,
+      "hot": false,
+      "addCart":false,
+      "kit":true
+    },
+
+    {
+      "id": 16,
+      "title": "FULL SUMMER KIT",
+      "HeroImage": "https://i.ibb.co/55z32tw/long-sleeimg1:ve.png",
+      "imageUrl":{
+        "img1":"https://i.ibb.co/55z32tw/long-sleeimg1:ve.png",
+        "img2":"https://i.ibb.co/VpW4x5t/roll-up-jimg2:ean-shirt.png"
+      },
+      "kitItems":"Half Jacket + Skiny Trousers + Boot leather",
+      "description": "Lorem Ipsum is simply dummy text of the printing and type setting industry ",
+      "price": 120,
+      "gender": "Women",
+      "type": "kit",
+      "size": ["S", "M", "L", "XL"],
+      "quantity": 1,
+      "color": [
+        "red",
+        "blue",
+        "black",
+        "green"
+     ],
+      "brand": "Reebook",
+      "like": false,
+      "featured": false,
+      "hot": false,
+      "addCart":false,
+      "kit":true
+    }
+
+  ]
+}
+

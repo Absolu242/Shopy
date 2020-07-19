@@ -1,0 +1,138 @@
+.NavBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 5rem;
+  border-top: 1px #edeff1 solid;
+  border-bottom: 1px #edeff1 solid;
+}
+
+.NavBar .selected {
+  color: #ff5912;
+}
+
+.Navleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  color: #ff5912;
+  left: 1rem;
+}
+
+.Navleft .NavList {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Navleft .NavList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.Navleft .NavList li {
+  color: #34404b !important;
+  margin: 0 0.2rem;
+}
+
+.Navleft .NavList li a {
+  padding: 0 1rem;
+  text-decoration: none;
+  color: #34404b;
+}
+
+.Navleft .NavList a:hover {
+  color: #ff5912 !important;
+}
+
+.Navright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #34404b;
+}
+
+.Navright .counter {
+  position: relative;
+  left: 15px;
+  top: -16px;
+  background-color: #34404b;
+  color: #fff;
+  padding: 0 5px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.Navright a {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: #34404b;
+}
+
+.Navright a:hover {
+  color: #ff5912 !important;
+}
+
+@media (max-width: 768px) {
+  .NavBar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Navleft {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 0;
+  }
+  .Navleft .NavList ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Navleft .NavList li {
+    margin: 15px 0;
+  }
+  .Navleft .NavList li a {
+    padding: 1rem 0;
+  }
+}
+/*# sourceMappingURL=NavHeader.css.map */

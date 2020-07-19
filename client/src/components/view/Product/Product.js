@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {MdAddShoppingCart} from 'react-icons/md';
 import {RiHeartLine} from 'react-icons/ri';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {addToCart} from '../../../_actions/cart_action';
 const ProductStyle = styled.div`
 
   position: relative;
@@ -11,7 +13,7 @@ const ProductStyle = styled.div`
   border:1px solid #ffff;
   background-color:#ffff;
   text-align:center;
-  margin: 10px 20px;
+  margin: 10px 10px;
   
   a{
     text-decoration:none;
@@ -70,7 +72,7 @@ const ProductStyle = styled.div`
         text-align:center;
       
         img{
-          width:80px;
+          width:100px;
         height:100px;
         }
       } 
@@ -88,12 +90,16 @@ const ProductStyle = styled.div`
 
       .action{
         position:relative;
-        top:50px;
+        top:10px;
         
-        a{
-          text-decoration:none;
+        button{
+
           color:#495662;
           margin:0 10px;
+          background-color:none;
+          background:none;
+          border:none;
+          font-size:18px;
 
           :hover{
             color:#ff5912
@@ -109,74 +115,85 @@ const ProductStyle = styled.div`
   }
 
 `;
+class Product extends Component {
+  render(){
 
-function Product({item, addItem}) {
-  const {id,title, imageUrl, color, size, price} = item;
+  const {item} = this.props;
 
   return (
     <ProductStyle>
-      <Link  exact to={`/product/:${id}`}>
       <div className="front">
         <div className="image">
-          <img src={imageUrl.img1} alt="product image" />
+          <Link to={`/product/${item.id}`}>
+            <img src={item.imageUrl[0]} alt={item.imageUrl[0]} />
+          </Link>
         </div>
         <div className="info">
-          <span className="title" style={{color: '#495662'}}>
-            <h4>{title}</h4>
-          </span>
-          <span style={{color: '#ff5912'}}>
-            <strong>{`Price : ${price}$`}</strong>
-          </span>
-
+          <Link to={`/product/${item.id}`}>
+            <span className="title" style={{color: '#495662'}}>
+              <h4>{item.title}</h4>
+            </span>
+            <span style={{color: '#ff5912'}}>
+              <strong>{`Price : ${item.price}$`}</strong>
+            </span>
+          </Link>
         </div>
       </div>
 
       <div className="hover">
 
         <div className="info">
+          <Link to={`/product/${item.id}`}>
+            <div className="image">
+              <img src={item.imageUrl[0]} alt={item.imageUrl[0]}  />
+            </div>
+            <span className="title" style={{color: '#ff5912'}}>
+              <h5>{item.title}</h5>
+            </span>
+            <div
+              className="size"
+              style={{color: '#495662', textTransform: 'lowercase'}}
+            >
+              <p>
+                size:
+                {' '}
+                {item.size.map ((item, i) => (i >= 1 ? ` - ${item} ` : ` ${item} `))}
+              </p>
+            </div>
+            <div className="color">
+              {item.color.map ((col, i) => (
+                <div
+                  key={i}
+                  style={{
+                    backgroundColor: `${col}`,
+                    width: '15px',
+                    height: '15px',
+                    borderRadius: '50%',
+                    margin: '0 5px',
+                  }}
+                />
+              ))}
 
-          <div className="image">
-            <img src={imageUrl.img1} alt="product image" />
-          </div>
-          <span className="title" style={{color: '#ff5912'}}>
-            <h5>{title}</h5>
-          </span>
-          <div className="size" style={{color: '#495662', textTransform:'lowercase'}}>
-            <p>
-              size:
-              {' '}
-              {size
-                .map ((item, i) => (i === size.length ? ` ${item}` : ` ${ item} - `))}
-            </p>
-          </div>
-          <div className="color">
-            {color.map (col => (
-              <div
-                style={{
-                  backgroundColor: `${col}`,
-                  width: '15px',
-                  height: '15px',
-                  borderRadius: '50%',
-                  margin: '0 5px',
-                }}
-              />
-            ))}
-
-          </div>
+            </div>
+          </Link>
         </div>
 
         <div className="action">
-          <Link exact to="/product/:productId" onClick={() => addItem (item)}>
+          <button   onClick={() => this.props.addToCart (this.props.cartItems, item)}>
             <MdAddShoppingCart />
-          </Link>
-          <Link exact to="/product/:productId" onClick={() => addItem (item)}>
+          </button>
+          <button >
             <RiHeartLine />
-          </Link>
+          </button>
         </div>
       </div>
-      </Link>
     </ProductStyle>
   );
 }
+}
 
-export default Product;
+const mapStateToProps = state =>({
+  cartItems: state.cart.items,
+})
+
+export default connect(mapStateToProps, {addToCart})(Product)

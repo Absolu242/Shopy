@@ -8,6 +8,7 @@ import SingleProductPage
 import Header from './components/view/Header/Header';
 import HotDeals from '../src/components/view/HotDeals/HotDeals'
 import Footer from './components/view/Footer/Footer';
+import Basket from './components/view/Basket/Basket';
 
 function App () {
   return (
@@ -25,6 +26,11 @@ function App () {
             exact
             path="/HotDeals"
             component={HotDeals}
+          />
+           <Route
+            exact
+            path="/Basket"
+            component={Basket}
           />
           <Route
             exact

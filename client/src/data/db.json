@@ -1,0 +1,91 @@
+{
+    "products":[
+        {
+        "id": 1,
+        "title": "Brown Brim",
+        "imageUrl":"https://i.ibb.co/QdJwgmp/brown-cowboy.png",
+        "description": "Lorem Ipsum is simply dummy text of the ",
+        "price": 22,
+        "availableSizes": ["S", "M", "L", "XL"],
+        "isFreeShipping":true
+      },
+      
+      {
+        "id": 2,
+        "title": "Cool Brim",
+        "imageUrl":"https://i.ibb.co/rKBDvJX/palm-tree-cap.png",
+        "description": "Lorem Ipsum is simply dummy text of ",
+        "price": 22,
+        "availableSizes": ["S", "M", "L"],
+        "isFreeShipping":true
+      },
+    
+      
+      {
+        "id": 3,
+        "title": "Brown Brim",
+        "imageUrl": "https://i.ibb.co/X2VJP2W/blue-snapback.png",
+        "description": "Lorem Ipsum is simply dummy text of ",
+        "price": 22,
+        "availableSizes": ["S", "L", "XL"],
+        "isFreeShipping":true
+      },
+    
+    
+  
+      {
+        "id": 4,
+        "title": "Nice Brim",
+        "imageUrl":"https://i.ibb.co/bPmVXyP/black-converse.png",
+        "description": "Lorem Ipsum is simply dummy text of the ",
+        "price": 29,
+        "availableSizes": ["S", "L", "XL"],
+        "isFreeShipping":true
+      },
+
+      {
+        "id": 5,
+        "title": "Brown Brim",
+        "imageUrl":"https://i.ibb.co/QdJwgmp/brown-cowboy.png",
+        "description": "Lorem Ipsum is simply dummy text of the ",
+        "price": 22,
+        "availableSizes": ["S", "M", "L", "XL"],
+        "isFreeShipping":true
+      },
+      
+      {
+        "id": 6,
+        "title": "Cool Brim",
+        "imageUrl":"https://i.ibb.co/rKBDvJX/palm-tree-cap.png",
+        "description": "Lorem Ipsum is simply dummy text of ",
+        "price": 22,
+        "availableSizes": ["S", "M", "L"],
+        "isFreeShipping":true
+      },
+    
+      
+      {
+        "id": 7,
+        "title": "Brown Brim",
+        "imageUrl": "https://i.ibb.co/X2VJP2W/blue-snapback.png",
+        "description": "Lorem Ipsum is simply dummy text of ",
+        "price": 22,
+        "availableSizes": ["S", "L", "XL"],
+        "isFreeShipping":true
+      },
+    
+    
+  
+      {
+        "id": 8,
+        "title": "Nice Brim",
+        "imageUrl":"https://i.ibb.co/bPmVXyP/black-converse.png",
+        "description": "Lorem Ipsum is simply dummy text of the ",
+        "price": 29,
+        "availableSizes": ["S", "L", "XL"],
+        "isFreeShipping":true
+      }
+    ]
+  }
+  
+  

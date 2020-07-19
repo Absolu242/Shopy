@@ -1,0 +1,197 @@
+html a, html button {
+  cursor: pointer;
+}
+
+.tap-label {
+  position: relative;
+}
+
+.tap {
+  display: none;
+}
+
+.tap:checked ~ .card {
+  display: block;
+}
+
+a {
+  padding: 0 1rem;
+  text-decoration: none;
+  color: #34404b;
+}
+
+a:hover {
+  color: #ff5912 !important;
+}
+
+.card {
+  position: relative;
+  background-color: #141414c7;
+  display: block;
+}
+
+.mini-basket__card {
+  top: 10%;
+  -webkit-transform: translate(-30%, -10%);
+          transform: translate(-30%, -10%);
+  background-color: #f4f6f8;
+  color: #ebebeb;
+  border: 1px solid #eeb013;
+  position: absolute;
+  width: 300px;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  z-index: 5;
+}
+
+.mini-basket__card .text {
+  padding-left: 1.2rem;
+  color: #34404b;
+  text-align: center;
+}
+
+.mini-basket__card .text span {
+  color: #ff5912;
+  font-weight: 500;
+}
+
+.mini-basket__card button {
+  padding: .5rem;
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.mini-basket__card button .icon {
+  font-size: 1.5rem;
+  color: #34404b;
+  font-weight: bold;
+}
+
+.mini-basket__card--content {
+  position: relative;
+  height: 150vh;
+  overflow: scroll;
+}
+
+.mini-basket__card--content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.mini-basket__card--content::-webkit-scrollbar-thumb {
+  background: #f6b138;
+}
+
+.mini-basket__card--content__item {
+  position: relative;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-bottom: 1px solid #b7b7b7;
+  padding: 3rem .5rem;
+}
+
+.mini-basket__card--content__item .image {
+  padding-right: 1rem;
+}
+
+.mini-basket__card--content__item .image img {
+  width: 80px;
+  height: 80px;
+}
+
+.mini-basket__card--content__item .info {
+  padding-right: .7rem;
+}
+
+.mini-basket__card--content__item .info h3 {
+  font-size: .7rem;
+}
+
+.mini-basket__card--content__item .info .price {
+  position: relative;
+  color: #eeb013;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-size: 1rem;
+  top: -0.5rem;
+}
+
+.mini-basket__card--content__item .info .quantity {
+  position: relative;
+  font-size: .6rem;
+  top: -1rem;
+  color: #6a6a6a;
+}
+
+.mini-basket__card--content__item button {
+  border: none;
+  color: white;
+}
+
+.mini-basket__card--content__item button .icon {
+  font-size: 1.8rem;
+  color: #34404b;
+  font-weight: bold;
+}
+
+.mini-basket__card__action {
+  text-align: center;
+}
+
+.mini-basket__card__action h2 {
+  font-weight: 200;
+  font-size: .9rem;
+  letter-spacing: .5rem;
+  color: #34404b;
+}
+
+.mini-basket__card__action h2 span {
+  color: #ff5912;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.mini-basket__card__action .btn {
+  margin-bottom: .5rem;
+}
+
+.mini-basket__card__action .btn button {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  color: white;
+  border: none;
+}
+
+.mini-basket__card__action .btn button.btn-primary {
+  background-color: #ff5912;
+  padding: .7rem 2rem;
+}
+
+.mini-basket__card__action .btn button.btn-secondary {
+  background-color: #6a6a6a;
+  padding: .7rem 2rem;
+}
+
+@media (max-width: 735px) {
+  .card {
+    position: absolute;
+  }
+}
+/*# sourceMappingURL=MiniBasket.css.map */

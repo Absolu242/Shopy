@@ -1,18 +1,27 @@
-import React from 'react';
+import React,{Component} from 'react';
 import {
   CarouselProvider,
   Slider,
   Slide,
-  ButtonBack,
-  ButtonNext,
   DotGroup,
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import './Sections/Hero.css';
-import store from '../../../data/store';
 import HeroProduct from './Sections/HeroProduct';
+import {connect} from 'react-redux';
+import {fetchProducts} from '../../../_actions/user_actions';
 
-function Hero () {
+class Hero extends Component {
+
+  UNSAFE_componentWillMount(){
+      this.props.fetchProducts();
+      
+  }
+  render() {
+
+      
+    let productItems ;
+
   return (
     <CarouselProvider
       naturalSlideWidth={100}
@@ -25,11 +34,17 @@ function Hero () {
     >
       <Slider>
 
-        {store.kit.filter ((item, limit) => limit < 4).map (item => (
-          <Slide key={item.id}>
-            <HeroProduct key={item.id} item={item} />
-          </Slide>
-        ))}
+        {productItems = this.props.products
+          .filter (product => product.kit === true )
+          .map( product =>
+            <Slide key={product.id}>
+            <HeroProduct key={product.id}  item={product} />
+            </Slide>
+          )
+        }
+          
+           
+          
       </Slider>
       <DotGroup
         className="Dots"
@@ -37,5 +52,8 @@ function Hero () {
     </CarouselProvider>
   );
 }
-
-export default Hero;
+}
+const mapStateToProps = state =>({
+  products:state.products.filteredItems,
+}) 
+export default connect(mapStateToProps, {fetchProducts})(Hero)

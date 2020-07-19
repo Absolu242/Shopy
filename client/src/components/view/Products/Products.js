@@ -1,6 +1,8 @@
-import React from 'react';
-import store from '../../../data/store';
+import React,{Component} from 'react';
 import Product from '../../view/Product/Product';
+import {connect} from 'react-redux';
+import {fetchProducts} from '../../../_actions/user_actions';
+
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -10,22 +12,32 @@ position:relative;
 text-align:center;
 padding: 50px 0;
 display:flex;
-justify-content:space-between;
+justify-content:center;
 flex-wrap:wrap;
 
 
-`
 
-function Products () {
-  return (
-    <Container>
-        {store.items.map (item => (
-            <Product key={item.id} item={item} />
-            ))}
-    
-    </Container>
-  );
+`
+class Products extends Component {
+  
+  UNSAFE_componentWillMount(){
+      this.props.fetchProducts();
+  }
+  render() {
+      const productItems = this.props.products.map( product =>
+          <Product key={product.id} item={product}/>
+      )
+      return (
+          <Container>
+              {productItems}
+          </Container>
+      )
+  }
 }
 
-export default Products;
+const mapStateToProps = state =>({
+  products:state.products.filteredItems,
+})
+
+export default connect(mapStateToProps, {fetchProducts})(Products)
 

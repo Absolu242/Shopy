@@ -1,0 +1,224 @@
+$backgroundColor:#141414;
+$whiteColor:#ebebeb;
+$yellowColor:#f6b138;
+$yellowColor2:#eeb013;
+$orangeColor:#ff5912;
+$greyColor:#b7b7b7;
+$greyColor2:#343434;
+$greyColor3:#6a6a6a;
+$greyColor4:#909090;
+
+html{
+    a, button{
+        cursor: pointer;
+    }
+
+}
+
+
+
+
+.tap-label{
+    position: relative;
+}
+
+.tap{
+    display:none;
+}
+
+.tap:checked ~ .card{
+    display:block;
+}
+a{
+  padding:0 1rem;
+  text-decoration:none;
+  color:#34404b
+  }
+
+  a:hover{
+      color:#ff5912 !important;
+    }
+
+
+.card{
+    position: relative;
+    background-color:#141414c7;
+    display: block;
+}
+.mini-basket__card{
+    top: 10%;
+    transform: translate(-30%, -10%);
+    background-color:#f4f6f8;
+    color: $whiteColor;
+    border: 1px solid $yellowColor2;
+    position: absolute;
+    width: 300px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 5;
+
+    .text{
+        padding-left:1.2rem;
+        color:#34404b;
+        text-align: center;
+
+        span{
+            color:$orangeColor;
+            font-weight:500;
+        }
+    }
+
+    button{
+            padding: .5rem;
+            outline: none;
+            background: none;
+            border:none;
+
+            
+            .icon{
+                font-size: 1.5rem;
+                color: #34404b;
+                font-weight: bold;
+               }
+            }
+    
+
+    &--content{
+        position: relative;
+        height: 150vh;
+        overflow: scroll;
+        
+
+        &::-webkit-scrollbar{
+            width:5px;
+        }
+        
+        &::-webkit-scrollbar-thumb{
+            background: $yellowColor;
+        }
+
+      
+        &__item{
+            position: relative;
+            width:inherit;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border-bottom: 1px solid $greyColor;
+           
+            padding: 3rem .5rem;
+
+            .image{
+                padding-right: 1rem;
+                img{
+                    width:80px;
+                    height:80px;
+                }
+            }
+           
+           .info{
+            padding-right: .7rem;
+            
+
+               h3{
+                   font-size: .7rem;
+                   
+               }
+
+               .price{
+                   position: relative;
+                   color: $yellowColor2;
+                   font-family: 'Crimson Text', serif;
+                   font-style: italic;
+                   font-size: 1rem;
+                   top: -0.5rem;
+               }
+
+               .quantity{
+
+                position: relative;
+                font-size: .6rem;
+                top: -1rem;
+                color: $greyColor3;
+
+               }
+           } 
+
+           
+
+           button{
+
+            border: none;
+           
+            color: white;
+            .icon{
+
+                font-size: 1.8rem;
+                color: #34404b;
+                font-weight: bold;
+               }
+
+           }
+           
+        }
+
+        
+    }
+
+    &__action{
+        text-align: center;
+
+        h2 {
+            font-weight: 200;
+            font-size: .9rem;
+            letter-spacing: .5rem;
+            color:#34404b;
+
+            span{
+             color:$orangeColor;
+               font-family: 'Crimson Text', serif;
+               font-style: italic;
+               font-size: 1.5rem;
+            }
+        }
+
+        .btn{
+
+            margin-bottom: .5rem ;
+
+            button{
+
+                font-size: 1rem;
+                font-weight: bold;
+                letter-spacing: .2rem;
+                color: white;
+                border: none;
+                
+
+                &.btn-primary{
+                
+                background-color: $orangeColor;
+                padding: .7rem 2rem; 
+
+                }
+
+                &.btn-secondary{
+                background-color: $greyColor3;
+                padding: .7rem 2rem;
+              }
+
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 735px){
+
+    .card{
+        position: absolute;
+    }
+
+}
